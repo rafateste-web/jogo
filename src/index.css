@@ -1,0 +1,70 @@
+/* Title */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg: #517ad1;
+    --bg2:#4400ff;
+    --primary:#0011ff;
+    --secundary:#2c76ff;
+    --accent:#59acfa;
+    
+    --text:#2b2b2b;
+    --text-claro:#2b2b2b;
+    --focus:#ffffff;
+    
+    --white:#fff;
+    --black:#000;
+
+    --border:1px solid #3340fd; 
+    
+    box-shadow:0 3px 4px #3300;
+    font-size:16px;
+}
+
+
+*{
+    box-sizing: border-box;  /* Não estoura o limite */
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    color: var(--text);
+    background-color: var(--bg);
+
+}
+
+h1, h2, h3{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Imagens nunca estouram o container */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* focus garantido */
+a:focus-visible, button:focus-visible{
+    outline:3px solid var(--focus);
+    offset:3px;
+    border-radius:10px;
+}
+
+.container{
+    width:min(1100px, 92%);
+    margin:0 auto;
+}
+
+main{
+    padding: 1 rem 0.5rem;
+}
